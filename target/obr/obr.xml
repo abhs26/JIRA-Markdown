@@ -1,0 +1,61 @@
+<repository lastmodified='20180418112236.203'>
+  <resource id='com.learnLab.markdown.Plugin/1.0.0' symbolicname='com.learnLab.markdown.Plugin' presentationname='markdownPlugin' uri='markdownPlugin-1.0.jar' version='1.0.0'>
+    <description>This is the com.learnLab.markdown:markdownPlugin plugin for Atlassian JIRA.</description>
+    <size>675285</size>
+    <documentation>http://www.abhisheksrivastava.co/</documentation>
+    <capability name='bundle'>
+      <p n='symbolicname' v='com.learnLab.markdown.Plugin'/>
+      <p n='presentationname' v='markdownPlugin'/>
+      <p n='version' t='version' v='1.0.0'/>
+      <p n='manifestversion' v='2'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.learnLab.markdown.api'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <require name='package' filter='(&amp;(package=org.springframework.osgi.context))' extend='false' multiple='false' optional='true'>Import package org.springframework.osgi.context;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=org.springframework.osgi.service.exporter.support))' extend='false' multiple='false' optional='true'>Import package org.springframework.osgi.service.exporter.support;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=org.springframework.osgi.service.importer.support))' extend='false' multiple='false' optional='true'>Import package org.springframework.osgi.service.importer.support;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.gemini.blueprint.context))' extend='false' multiple='false' optional='true'>Import package org.eclipse.gemini.blueprint.context;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.gemini.blueprint.service.exporter))' extend='false' multiple='false' optional='true'>Import package org.eclipse.gemini.blueprint.service.exporter;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.gemini.blueprint.service.exporter.support))' extend='false' multiple='false' optional='true'>Import package org.eclipse.gemini.blueprint.service.exporter.support;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=org.eclipse.gemini.blueprint.service.importer.support))' extend='false' multiple='false' optional='true'>Import package org.eclipse.gemini.blueprint.service.importer.support;resolution:=optional</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.jira.component))' extend='false' multiple='false' optional='false'>Import package com.atlassian.jira.component</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.jira.issue))' extend='false' multiple='false' optional='false'>Import package com.atlassian.jira.issue</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.jira.issue.fields.renderer))' extend='false' multiple='false' optional='false'>Import package com.atlassian.jira.issue.fields.renderer</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.jira.plugin.renderer))' extend='false' multiple='false' optional='false'>Import package com.atlassian.jira.plugin.renderer</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.jira.web.action))' extend='false' multiple='false' optional='false'>Import package com.atlassian.jira.web.action</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.plugin.osgi.factory))' extend='false' multiple='false' optional='false'>Import package com.atlassian.plugin.osgi.factory</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.renderer))' extend='false' multiple='false' optional='false'>Import package com.atlassian.renderer</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.renderer.v2))' extend='false' multiple='false' optional='false'>Import package com.atlassian.renderer.v2</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.renderer.v2.macro))' extend='false' multiple='false' optional='false'>Import package com.atlassian.renderer.v2.macro</require>
+    <require name='package' filter='(&amp;(package=com.atlassian.sal.api))' extend='false' multiple='false' optional='false'>Import package com.atlassian.sal.api</require>
+    <require name='package' filter='(&amp;(package=com.google.common.base))' extend='false' multiple='false' optional='false'>Import package com.google.common.base</require>
+    <require name='package' filter='(&amp;(package=com.google.common.collect))' extend='false' multiple='false' optional='false'>Import package com.google.common.collect</require>
+    <require name='package' filter='(&amp;(package=com.learnLab.markdown.api)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' extend='false' multiple='false' optional='false'>Import package com.learnLab.markdown.api;version="[1.0,2)"</require>
+    <require name='package' filter='(&amp;(package=javax.annotation))' extend='false' multiple='false' optional='false'>Import package javax.annotation</require>
+    <require name='package' filter='(&amp;(package=javax.inject))' extend='false' multiple='false' optional='false'>Import package javax.inject</require>
+    <require name='package' filter='(&amp;(package=javax.net.ssl))' extend='false' multiple='false' optional='false'>Import package javax.net.ssl</require>
+    <require name='package' filter='(&amp;(package=javax.script))' extend='false' multiple='false' optional='false'>Import package javax.script</require>
+    <require name='package' filter='(&amp;(package=javax.xml.parsers))' extend='false' multiple='false' optional='false'>Import package javax.xml.parsers</require>
+    <require name='package' filter='(&amp;(package=javax.xml.transform))' extend='false' multiple='false' optional='false'>Import package javax.xml.transform</require>
+    <require name='package' filter='(&amp;(package=javax.xml.transform.dom))' extend='false' multiple='false' optional='false'>Import package javax.xml.transform.dom</require>
+    <require name='package' filter='(&amp;(package=javax.xml.transform.stream))' extend='false' multiple='false' optional='false'>Import package javax.xml.transform.stream</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.lang))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.lang</require>
+    <require name='package' filter='(&amp;(package=org.apache.commons.logging))' extend='false' multiple='false' optional='false'>Import package org.apache.commons.logging</require>
+    <require name='package' filter='(&amp;(package=org.osgi.framework))' extend='false' multiple='false' optional='false'>Import package org.osgi.framework</require>
+    <require name='package' filter='(&amp;(package=org.springframework.aop.support))' extend='false' multiple='false' optional='false'>Import package org.springframework.aop.support</require>
+    <require name='package' filter='(&amp;(package=org.springframework.beans))' extend='false' multiple='false' optional='false'>Import package org.springframework.beans</require>
+    <require name='package' filter='(&amp;(package=org.springframework.beans.factory))' extend='false' multiple='false' optional='false'>Import package org.springframework.beans.factory</require>
+    <require name='package' filter='(&amp;(package=org.springframework.beans.factory.annotation))' extend='false' multiple='false' optional='false'>Import package org.springframework.beans.factory.annotation</require>
+    <require name='package' filter='(&amp;(package=org.springframework.beans.factory.config))' extend='false' multiple='false' optional='false'>Import package org.springframework.beans.factory.config</require>
+    <require name='package' filter='(&amp;(package=org.springframework.beans.factory.parsing))' extend='false' multiple='false' optional='false'>Import package org.springframework.beans.factory.parsing</require>
+    <require name='package' filter='(&amp;(package=org.springframework.beans.factory.support))' extend='false' multiple='false' optional='false'>Import package org.springframework.beans.factory.support</require>
+    <require name='package' filter='(&amp;(package=org.springframework.beans.factory.xml))' extend='false' multiple='false' optional='false'>Import package org.springframework.beans.factory.xml</require>
+    <require name='package' filter='(&amp;(package=org.springframework.context.annotation))' extend='false' multiple='false' optional='false'>Import package org.springframework.context.annotation</require>
+    <require name='package' filter='(&amp;(package=org.springframework.core.io))' extend='false' multiple='false' optional='false'>Import package org.springframework.core.io</require>
+    <require name='package' filter='(&amp;(package=org.springframework.stereotype))' extend='false' multiple='false' optional='false'>Import package org.springframework.stereotype</require>
+    <require name='package' filter='(&amp;(package=org.springframework.util))' extend='false' multiple='false' optional='false'>Import package org.springframework.util</require>
+    <require name='package' filter='(&amp;(package=org.w3c.dom))' extend='false' multiple='false' optional='false'>Import package org.w3c.dom</require>
+  </resource>
+</repository>

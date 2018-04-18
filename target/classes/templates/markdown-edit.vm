@@ -1,0 +1,31 @@
+#if($singleLine)
+<input class="textfield text long-field#if($class) $class#end" id="$fieldId" name="$fieldId"
+       #if($maxlength)maxlength="$maxlength"#end type="text" value="$textutils.htmlEncode($!value)"/>
+#else
+<div>
+
+    <div class="wmd-panel">
+        <div id="wmd-button-bar-$fieldId"></div>
+            <textarea #if($accesskey)accesskey="$accesskey"#end
+              class="wmd-input textarea long-field#if($class) $class#end#if($mentionable) mentionable#end"
+              id="wmd-input-$fieldId"
+              data-id-postfix="$fieldId"
+              name="$fieldId"
+              #if($cols)cols="$cols"#end
+              #if($rows)rows="$rows"#end
+              #if($data-projectkey)data-projectkey="$data-projectkey"#end
+              #if($data-issuekey)data-issuekey="$data-issuekey"#end>
+## The new line above solves JRA-11257, TextAreas ignore the first newline of their inner HTML when displaying.
+## This caused the TextArea to 'eat' a line of whitespace from content that was preceded by one or more newline chars
+$textutils.htmlEncode($!value)</textarea>
+    </div>
+    <div class="field-tools">
+        <a class="wmd-preview-button fullscreen selected" href="#" id="wmd-preview-button-${fieldId}" title="preview">preview</a>
+        <a class="wmd-preview-button help-icon" id="wmd-help-button-${fieldId}" title="markdown help">markdown help</a>
+    </div>
+    <div id="wmd-preview-container-$fieldId" class="wmd-preview-container selected">
+        <div id="wmd-preview-$fieldId" class="wmd-panel wmd-preview"></div>
+    </div>
+
+</div>
+#end

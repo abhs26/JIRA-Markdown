@@ -1,0 +1,42 @@
+Manifest-Version: 1.0
+Atlassian-Build-Date: 2018-04-18T23:22:24+0000
+Atlassian-Plugin-Key: com.learnLab.markdown.markdownPlugin
+Bnd-LastModified: 1524093752088
+Build-Jdk: 1.8.0_161
+Built-By: Administrator
+Bundle-Description: This is the com.learnLab.markdown:markdownPlugin plu
+ gin for Atlassian JIRA.
+Bundle-DocURL: http://www.abhisheksrivastava.co/
+Bundle-ManifestVersion: 2
+Bundle-Name: markdownPlugin
+Bundle-SymbolicName: com.learnLab.markdown.Plugin
+Bundle-Vendor: LearningLab
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.learnLab.markdown.api;version="1.0.0"
+Import-Package: org.springframework.osgi.context;resolution:=optional,or
+ g.springframework.osgi.service.exporter.support;resolution:=optional,or
+ g.springframework.osgi.service.importer.support;resolution:=optional,or
+ g.eclipse.gemini.blueprint.context;resolution:=optional,org.eclipse.gem
+ ini.blueprint.service.exporter;resolution:=optional,org.eclipse.gemini.
+ blueprint.service.exporter.support;resolution:=optional,org.eclipse.gem
+ ini.blueprint.service.importer.support;resolution:=optional,com.atlassi
+ an.jira.component,com.atlassian.jira.issue,com.atlassian.jira.issue.fie
+ lds.renderer,com.atlassian.jira.plugin.renderer,com.atlassian.jira.web.
+ action,com.atlassian.plugin.osgi.factory,com.atlassian.renderer,com.atl
+ assian.renderer.v2,com.atlassian.renderer.v2.macro,com.atlassian.sal.ap
+ i,com.google.common.base,com.google.common.collect,com.learnLab.markdow
+ n.api;version="[1.0,2)",javax.annotation,javax.inject,javax.net.ssl,jav
+ ax.script,javax.xml.parsers,javax.xml.transform,javax.xml.transform.dom
+ ,javax.xml.transform.stream,org.apache.commons.lang,org.apache.commons.
+ logging,org.osgi.framework,org.springframework.aop.support,org.springfr
+ amework.beans,org.springframework.beans.factory,org.springframework.bea
+ ns.factory.annotation,org.springframework.beans.factory.config,org.spri
+ ngframework.beans.factory.parsing,org.springframework.beans.factory.sup
+ port,org.springframework.beans.factory.xml,org.springframework.context.
+ annotation,org.springframework.core.io,org.springframework.stereotype,o
+ rg.springframework.util,org.w3c.dom
+Originally-Created-By: Apache Maven Bundle Plugin
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Spring-Context: *
+Tool: Bnd-2.4.1.201501161923

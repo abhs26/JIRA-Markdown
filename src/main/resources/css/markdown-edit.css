@@ -1,0 +1,23 @@
+.wmd-preview-button {
+    width: 16px;
+    height: 16px;
+    border: none;
+    background-color: transparent;
+    display: block;
+    float: left;
+    text-indent: -9999px;
+    cursor: pointer;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+.wmd-preview-button.fullscreen {
+    background: url("../../../images/icons/ico_preview.png") center no-repeat;
+}
+
+.wmd-preview-button.fullscreen.selected {
+background: url("../../../images/icons/ico_preview_selected.png") center no-repeat;
+}
+.wmd-preview-button.help-icon {
+    background: url("../../../images/icons/ico_help.png") center no-repeat;
+}
