@@ -18,11 +18,16 @@ public class JiraMarkdownMacro extends BaseMacro
 
     private final RendererManager rendererManager;
 
+    public JiraMarkdownMacro()
+    {
+        this.rendererManager = ComponentAccessor.getRendererManager();
+    }
+/*
     public JiraMarkdownMacro(RendererManager rendererManager)
     {
         this.rendererManager = rendererManager;
     }
-
+*/
     public boolean isInline()
     {
         return true;
