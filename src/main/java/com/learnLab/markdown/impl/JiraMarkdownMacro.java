@@ -7,6 +7,7 @@ import com.atlassian.renderer.RenderContext;
 import com.atlassian.renderer.v2.RenderMode;
 import com.atlassian.renderer.v2.macro.BaseMacro;
 import com.atlassian.renderer.v2.macro.MacroException;
+import com.atlassian.jira.component.ComponentAccessor;
 
 import java.util.Map;
 
@@ -18,11 +19,16 @@ public class JiraMarkdownMacro extends BaseMacro
 
     private final RendererManager rendererManager;
 
+    public JiraMarkdownMacro()
+    {
+        this.rendererManager = ComponentAccessor.getRendererManager();
+    }
+/*
     public JiraMarkdownMacro(RendererManager rendererManager)
     {
         this.rendererManager = rendererManager;
     }
-
+*/
     public boolean isInline()
     {
         return true;
