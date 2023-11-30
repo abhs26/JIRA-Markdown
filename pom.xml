@@ -182,13 +182,19 @@
         </plugins>
     </build>
          
-         <repositories>
-                  <repository>
-                           <id>repo-id</id>
-                           <name>repo-name</name>
-                           <url>http://repourl</url>
-                  </repository>
-         </repositories>
+         <repository>
+               <id>atlassian-public</id>
+               <url>https://packages.atlassian.com/maven-external/</url>
+               <snapshots>
+                 <enabled>true</enabled>
+                 <updatePolicy>never</updatePolicy>
+                 <checksumPolicy>warn</checksumPolicy>
+               </snapshots>
+                <releases>
+                  <enabled>true</enabled>
+                  <checksumPolicy>warn</checksumPolicy>
+               </releases>
+         </repository>
 
     <properties>
         <jira.version>7.7.1</jira.version>
